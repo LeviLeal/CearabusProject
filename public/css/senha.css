@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(60, 59, 2, 0.6), rgba(14, 0, 94, 0.4));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#navbar{
+    background-color: rgb(200, 200, 200);
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#navbar li {
+  display: flex;
+  align-items: center;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+#pagina-inicial:hover,
+#pagina-cadastro:hover {
+    text-decoration: underline;
+}
+
+#logo-cearabus{
+    width: 120px;
+    cursor: pointer;
+}
+
+main {
+  display: flex;
+  padding: 40px 20px;
+}
+
+#form-senha {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 350px;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    background-color: #005bbb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #00448d;
+}
+
+#footer{
+    padding: 20px;
+    color: black;
+}

@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgba(90, 89, 0, 0.6), rgba(123, 155, 189, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+
+#navbar li {
+  display: flex;
+  align-items: center;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+#pagina-inicial:hover,
+#pagina-senha:hover {
+  text-decoration: underline;
+}
+
+#pagina-cadastro {
+  cursor: default;
+}
+
+
+#logo-cearabus {
+  width: 120px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+#flex-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+form section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.linha-solo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linha-dupla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.linha-dupla label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.linha-dupla input,
+.linha-dupla select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input,
+section {
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  background-color: #005bbb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #00448d;
+}
+
+#flex-container a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #005bbb;
+  text-align: center;
+}
+
+#footer {
+  padding: 20px;
+  color: black;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif; 
+    }
+body { 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f9f9f9; 
+}
+header { 
+    background-color: #1e3a8a; 
+    color: white; 
+    padding: 40px; 
+    text-align: center; 
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+h1 { 
+    text-align: center; 
+    margin-bottom: 30px; 
+    color: #1e3a8a; 
+}
+
+.carteirinha {
+  background-color: #ffffff;
+  border: 2px solid #1e3a8a;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-estudante {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.carteirinha .info p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.referencia-carteirinha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #1e3a8a;
+}
+
+#logo-prefeitura{
+    height: 24px;
+    width: auto;
+}
+
+
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 40px;
+    background-color: #f1f1f1; 
+    color: #666; 
+}

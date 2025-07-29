@@ -6,17 +6,20 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(rgba(44, 43, 0, 0.7), rgba(1, 0, 17, 0.9)), url("../img/eeeeeeeeeee.avif");
+  overflow: hidden;
+  background: linear-gradient(rgba(44, 43, 0, 0.7), rgba(1, 0, 17, 0.9)), url("../img/prefeitura.webp");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+
 }
 
-.flex-container{
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  
+    align-items: center;   
     flex-direction: column;
+    height: 100vh;            
 }
 
 .flex-login{
@@ -33,38 +36,16 @@ body {
   row-gap: 12px;
 }
 
-.links {
-  margin-top: 20px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  row-gap: 20px;
-}
-
-.links a {
-  color: #005bbb;
-  text-decoration: none;
-}
-
-.links a:hover{
-  text-decoration: underline;
-}
 
 input {
   padding: 12px;
   width: 350px;
 }
 
-#logo-cearabus
+#logo-cearabus,
+#logo-prefeitura 
 {
   width: 250px;
-  height: auto;
-}
-
-#logo-prefeitura {
-  width: 300px;
   height: auto;
 }
 
@@ -82,3 +63,4 @@ input {
 #btn-entrar:hover{
   background-color: #00448d;
 }
+

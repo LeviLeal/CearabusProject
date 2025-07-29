@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CearaBus: Acesso ao site</title>
+    <link rel="stylesheet" href="/css/login-adm.css">
+</head>
+
+<body>
+    <main class="flex-container">
+        <img id="logo-cearabus" src="/img/cb_novo.png" alt="Logo da cearabus">
+        <section class="flex-login">
+            <form method="post" action="/logar_adm/" id="flex-form">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+                <button id="btn-entrar" type="submit">Entrar</button>
+            </form>
+            <div class="links">
+                <a href="/">Logar como aluno</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

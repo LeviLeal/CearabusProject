@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+{{#unless hideNavbar}}
+  {{#if admin}}
+    {{> _navbar_adm }}
+  {{else}}
+    {{> _navbar }}
+  {{/if}}
+{{/unless}}
     {{{body}}}
 </body>
 </html>

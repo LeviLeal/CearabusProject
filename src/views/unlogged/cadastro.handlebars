@@ -28,7 +28,7 @@
 
     <main>
         <section id="flex-container">
-            <form id="form-cadastro" method="post" action="/cadastro/">
+            <form method="post" id="form-cadastro" action="/cadastro/" enctype="multipart/form-data">
                 <section class="linha-solo">
                     <label for="nome">Nome completo</label>
                     <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
@@ -46,6 +46,7 @@
                     </div>
 
                 </section>
+
 
                 <section class="linha-dupla">
                     <div>
@@ -76,9 +77,9 @@
                             <option value="ifce">IFCE</option>
                             <option value="ufc">UFC</option>
                             <option value="estacio">Estácio</option>
+                        </select>
                     </div>
 
-                    </select>
 
                 </section>
 
@@ -94,11 +95,41 @@
                         <input type="file" id="comprovante" name="comprovante" accept=".pdf,image/*" required>
                     </div>
 
+
                 </section>
+
+                <section class="linha-solo">
+                    <label for="ponto">Selecione o ponto de parada mais próximo de você</label>
+                    <select id="ponto" name="ponto" required>
+                        <option value="" disabled selected>Escolha um ponto de parada</option>
+                        <option value="maravilha">Maravilha (Boca da Ponte)</option>
+                        <option value="afagu">Funerária Afagu</option>
+                        <option value="bonfim">Igreja do Bonfim</option>
+                        <option value="mercadinho">Mercadinho</option>
+                        <option value="incessante">Incessante</option>
+                        <option value="matriz">Praça da Matriz</option>
+                        <option value="estacao">Praça da Estação</option>
+                        <option value="subestacao">Subestação</option>
+                        <option value="heloisa">Heloísa Dinelly</option>
+                        <option value="der">DER</option>
+                        <option value="raio">Raio</option>
+                        <option value="bocagrill">Boca Grill</option>
+                        <option value="pontodourado">Ponto Dourado</option>
+                        <option value="relite">Relite (Loja Antiga)</option>
+                        <option value="trigo">Arte do Trigo</option>
+                        <option value="perola">Pérola</option>
+                        <option value="divino">Divino 88</option>
+                        <option value="postonunes">Posto Nunes</option>
+                        <option value="benjamin">Benjamin Barroso</option>
+                        <option value="25">25 (Virgílio Távora e Haroldo dos Côco)</option>
+                        <option value="quivitoria">Quivitoria</option>
+                    </select>
+                </section>
+
 
                 <section class="linha-dupla">
                     <div>
-                        <label for="senha">Senha:</label>
+                        <label for="senha">Senha</label>
                         <input type="password" id="senha" name="senha" required>
                     </div>
 
@@ -112,18 +143,20 @@
                 <button type="submit">Criar Conta</button>
             </form>
 
-            <a href="/">Já possui cadastro? Clique aqui para fazer login.<a />
+            <a href="/">Já possui cadastro? Clique aqui para fazer login.</a>
         </section>
 
 
     </main>
-    <footer="footer">
+
+    <footer id="footer">
         <p> &copy; Secretaria de Educação de Quixeramobim </p>
         <p> Todos os direitos reservados. </p>
         <p> RUA RAFAEL PORDEUS, Nº 460 - CENTRO </p>
         <p> Quixeramobim - Ceará CEP: 63800-000 </p>
         <p> Secretaria de Quixeramobim: (88) 9.8191-2371 - (85) 98682-6792 </p>
-        </footer>
+
+    </footer>
 
 </body>
 

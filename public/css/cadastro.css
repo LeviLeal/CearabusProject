@@ -1,11 +1,11 @@
 * {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(rgba(90, 89, 0, 0.6), rgba(123, 155, 189, 0.8));
+  background: linear-gradient(135deg, rgba(0, 31, 63), rgba(0, 80, 160, 0.90), rgba(255, 215, 0, 0.85));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,12 +13,12 @@ body {
 }
 
 #navbar ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -28,23 +28,23 @@ body {
 }
 
 #navbar li a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: white;
 }
 
 #pagina-inicial:hover,
 #pagina-senha:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #pagina-cadastro {
-  cursor: default;
+    cursor: default;
 }
 
 
-#logo-cearabus {
-  width: 120px;
-  cursor: pointer;
+#logo-cearabus{
+    width: 120px;
+    cursor: pointer;
 }
 
 main {
@@ -62,7 +62,7 @@ main {
   max-width: 700px;
   width: 100%;
   margin: 40px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 form {
@@ -106,8 +106,7 @@ form section {
   box-sizing: border-box;
 }
 
-input,
-section {
+input,section {
   padding: 10px;
   width: 100%;
   max-width: 100%;
@@ -115,19 +114,19 @@ section {
 }
 
 button {
-  width: 200px;
-  padding: 10px;
-  background-color: #005bbb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  text-align: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #005bbb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
 }
 
-button:hover {
-  background-color: #00448d;
+button:hover{
+    background-color: #00448d;
 }
 
 #flex-container a {
@@ -138,7 +137,12 @@ button:hover {
   text-align: center;
 }
 
-#footer {
-  padding: 20px;
-  color: black;
+#ponto {
+  padding: 12px;
+  border-radius: 5px;
+}
+
+#footer{
+    padding: 20px;
+    color: white;
 }

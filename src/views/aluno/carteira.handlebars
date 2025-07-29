@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotas - CEARABUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/carteirinha.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Carteirinha de Estudante</h1>
+    <div class="carteirinha">
+        <img src="/img/aluno/{{aluno.foto}}" alt="Foto do Estudante" class="foto-estudante">
+
+        <div class="info">
+        <p>Nome: {{aluno.nome}}</p>
+        <p>Curso: {{aluno.curso}}</p>
+        <p>Instituição: {{aluno.instituicao}}</p>
+        <p>Matrícula: {{aluno.matricula}}</p>
+        <p>Ponto de parada: {{aluno.parada}}</p>
+        <p>Status da carteira: {{#if aluno.aprovado}} Aprovado {{else}} Não aprovada {{/if}} </p>
+
+        <div class="referencia-carteirinha">
+            <span>Gerência de transporte escolar</span>
+            <img id="logo-prefeitura" src="/img/logo prefeitura.jpg" alt="">
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer>&copy; 2025 Cearabus. Todos os direitos reservados.</footer>
+</body></html>

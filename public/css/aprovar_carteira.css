@@ -1,0 +1,43 @@
+h1 {
+    color: black;
+}
+#info_pedido
+{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.info_data_div
+{
+    margin-bottom: 5px;
+}
+
+#pedido_buttom_div
+{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.pedido_buttom
+{
+    width: 150px;
+    padding: 10px;
+    background-color: #005bbb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+}
+
+.pedido_buttom:hover
+{
+    background-color: #003999;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliar Carteira - CEARABUS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/rotas.css">
+    <link rel="stylesheet" href="/css/aprovar_carteira.css">
+</head>
+
+<body>
+    <main>
+        <h1>Avaliar pedidos</h1>
+        {{#each alunos}}
+        <form method="post" action="/julgar_carteirinha/">
+            <div id="info_pedido">
+                <input type="hidden" name="id" value="{{id}}">
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Foto:</label>
+                    <div>
+                        <img src="/img/aluno/{{foto}}" height="200px" alt="">
+                    </div>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Nome: {{nome}}</label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Email: {{email}} </label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">CPF: {{cpf}} </label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Curso: </label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Matrícula: {{matricula}}</label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Número do Celular: {{numero_celular}} </label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Instituição: </label>
+                    <label for="" class="info_data_insert"></label>
+                </div>
+                <div class="info_data_div">
+                    <label for="" id="info_data_label">Comprovante de Matrícula: </label>
+                    <div>
+                        <img src="/img/aluno/{{comprovante_faculdade}}" width="200px" alt="Comprovante da faculdade">
+                    </div>
+                </div>
+                <div id="pedido_buttom_div">
+                    <button name="acao" value="aprovar" class="pedido_buttom">Aprovar Pedido</button>
+                    <button name="acao" value="reprovar" class="pedido_buttom">Reprovar Pedido</button>
+                </div>
+            </div>
+        </form>
+        {{/each}}
+    </main>
+    <footer>&copy; 2025 Cearabus. Todos os direitos reservados.</footer>
+</body>
+
+</html>
